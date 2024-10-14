@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thomas & Niel Midterms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Cakes</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <header>
+        <h1><i>My Tasty Treats</i></h1>
+        <h2><i>Welcome to My Tasty Treat, Where You Can Customize Your Order</i></h2>
+    </header>
+
+        <center>
+        <section>
+            <h2>Store Hours</h2>
+            <p><strong>Monday to Friday:</strong> 10:00 AM - 4:00 PM</p>
+            <p><strong>Saturday and Sunday:</strong> Closed</p>
+        </section>
+        </center>
+
+    <div class="box1">
+        <center><h2><i>Blueberry Cheese Cake</i></h2></center>
+        <img src="Blueberry.jpg" alt="Cheese Cake" width="360" height="360" border="5">
+        <img src="c.jpg" alt="Cake Size" width="360" height="360" border="5">
+        <img src="Blueberry2.jpg" alt="Cheese Cake2" width="360" height="360" border="5">
+
+        <form class="order">
+        
+            <label for="flavor1">Add More Flavor:</label>
+            <select id="flavor1" name="flavor">
+                <option value="More Berry">More Blue Berry</option>
+                <option value="More Cheese">More Cheese</option>
+            </select>
+        
+            <label for="size1">Choose Size & Price:</label>
+            <select id="size1" name="size">
+                <option value="extrasmall">Extra Small $10</option>
+                <option value="small">Small $15</option>
+                <option value="medium">Medium $20</option>
+                <option value="large">Large $30</option>
+            </select>
+        
+            <label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" name="quantity" min="1" value="1">
+        
+            <button type="submit"><a href="forms.html">Order</a></button>
+            <button type="button" onclick="cancelAction()">Cancel</button>
+        </form>
+        
+    </div>
+
+    <div class="box2">
+    <center><h2><i>Chocolate Cake</i></h2></center>
+        <img src="Chocolatecake.jpg" alt="Chocolate cake" width="360" height="360" border="5">
+        <img src="c.jpg" alt="Cake Size" width="360" height="360" border="5">
+        <img src="Chocolatecake2.jpg" alt="Chocolate cake 2" width="360" height="360" border="5">
+
+        <form class="order">
+            <label for="flavor2">Add More Flavor:</label>
+            <select id="flavor2" name="flavor">
+                <option value="More Chocolate">More Chocolate</option>
+                <option value="More Toppings">More Toppings</option>
+            </select>
+
+            <label for="size2">Choose Size:</label>
+            <select id="size2" name="size">
+                <option value="extrasmall">Extra Small $10</option>
+                <option value="small">Small $15</option>
+                <option value="medium">Medium $20</option>
+                <option value="large">Large $30</option>
+            </select>
+
+            <label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity" min="1" value="1">
+
+            <button type="submit"><a href="forms.html">Order</a></button>
+            <button type="button" onclick="cancelAction()">Cancel</button>
+        </form>
+    </div>
+
+    <div class="box3">
+    <center><h2><i>Ube Cake</i></h2></center>
+        <img src="ubecake.jpg" alt="Ube cake" width="360" height="360" border="5">
+        <img src="c.jpg" alt="Cake Size" width="360" height="360" border="5">
+        <img src="ubecake2.jpg" alt="Ube cake 2" width="360" height="360" border="5">
+
+        <form class="order"> 
+            <label for="flavor3">Add More Flavor:</label>
+            <select id="flavor3" name="flavor">
+                <option value="More Ube">More Ube</option>
+                <option value="More Toppings">More Toppings</option>
+            </select>
+
+            <label for="size3">Choose Size:</label>
+            <select id="size3" name="size">
+                <option value="extrasmall">Extra Small $10</option>
+                <option value="small">Small $15</option>
+                <option value="medium">Medium $20</option>
+                <option value="large">Large $30</option>
+            </select>
+
+            <label for="quantity3">Quantity:</label>
+            <input type="number" id="quantity3" name="quantity" min="1" value="1">
+
+            <button type="submit"><a href="forms.html">Order</a></button>
+            <button type="button" onclick="cancelAction()">Cancel</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 Cake Customizer. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+        function cancelAction() {
+            alert("Action canceled.");
+        }
+    </script>
+</body>
+</html>
